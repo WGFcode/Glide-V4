@@ -12,11 +12,11 @@ Glide中的过渡效果可以让您定义Glide应该怎样从占位符过渡到�
 
 如果从Glide的内存缓存中加载资源，则没有默认的过渡效果。然而，如果从Glide的磁盘缓存，本地资源文件，URI或者远程的资源URL或URI中加载数据，则Glide的默认过渡效果会生效。
 
-想要改变默认的过渡效果的行为，您可以查看下面[自定义过渡效果](../docs/Transitions.md#自定义过渡效果)小节。
+想要改变默认的过渡效果的行为，您可以查看下面[自定义过渡效果](Transitions.md#自定义过渡效果)小节。
 
 ### 指定过渡效果
 
-有关概述和代码示例，查看[选项文档](../docs/Options.md#过渡选项)。
+有关概述和代码示例，查看[选项文档](Options.md#过渡选项)。
 
 过渡选项用于指定特定请求的过渡效果。过渡选项使用RequestBuilder中的transition()方法来为请求设置。特定类型的过渡效果可以使用BitmapTransitionOption或则DrawableTransitionOption指定。对于Bitmap和Drawable外的其他类型，可以使用GenericTransitionOption。
 
@@ -36,7 +36,7 @@ Glide默认淡入淡出动画利用TransitionDrawable。TransitionDrawable提供
 
 #### 跨请求淡入淡出
 
-过渡效果不可以在两个不同请求加载的图像之间淡入淡出。Glide默认会取消任何已存在的请求，当您开启一个新的负载在已存在的视图或目标（查看[目标文档](../docs/Targets.md)）。因此，如果您想要加载两个不同的图像并在他们之间淡入淡出，您不能直接在Glide这样做。策略就像等待第一个负载完成， 从视图中抓取Bitmap或Drawable，启动第二个负载，然后在Drawable或Bitmap和新的图像之间手动动画，但这样是不安全的，并且可能导致崩溃或图像损坏。
+过渡效果不可以在两个不同请求加载的图像之间淡入淡出。Glide默认会取消任何已存在的请求，当您开启一个新的负载在已存在的视图或目标（查看[目标文档](Targets.md)）。因此，如果您想要加载两个不同的图像并在他们之间淡入淡出，您不能直接在Glide这样做。策略就像等待第一个负载完成， 从视图中抓取Bitmap或Drawable，启动第二个负载，然后在Drawable或Bitmap和新的图像之间手动动画，但这样是不安全的，并且可能导致崩溃或图像损坏。
 
 相反地，在两个不同的请求中加载的两个不同的图像之间最简单的淡入淡出方式是使用ViewSwitcher包含两个ImageView。将第一张图像加载到getNextView()的结果中，接着加载第二张图像到getNextView()的下一个结果中，当第二张图像加载完成时，使用RequestListener调用showNext()。为了更好的控制，您可以遵从开发者文档中的概述的策略。当使用ViewSwitcher时，只有当第二张图像加载完成之后才淡入淡出。
 

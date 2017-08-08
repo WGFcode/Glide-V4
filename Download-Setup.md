@@ -73,4 +73,4 @@ dependencies {
 }
 ```
 
-有关详细信息，请参阅[Generated API章节](../docs/Generated-API.md)。
+有关详细信息，请参阅[Generated API章节](Generated-API.md)。

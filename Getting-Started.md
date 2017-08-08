@@ -35,7 +35,7 @@ GlideApp.with(fragment)
    .into(imageView);
 ```
 
-有关更多信息，请参阅Glide的[生成的API](../docs/Generated-API.md)页面。
+有关更多信息，请参阅Glide的[生成的API](Generated-API.md)页面。
 
 ## ListView和RecyclerView
 

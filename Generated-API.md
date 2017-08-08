@@ -24,7 +24,7 @@ dependencies {
 }
 ```
 
-有关详细信息，请参阅[下载和设置页面](../docs/Download-Setup.md)。
+有关详细信息，请参阅[下载和设置页面](Download-Setup.md)。
 
 2. 在应用程序中包含一个[AppGlideModule](http://bumptech.github.io/glide/javadocs/400/com/bumptech/glide/module/AppGlideModule.html)实现：
 ```

@@ -2,7 +2,7 @@
 
 Glide是Android平台上的一个快速高效的图像加载库，专注于平滑滚动。Glide提供了一个简单易用的API，一个性能可扩展的资源解码管道流和自动资源池。
 
-![glide logo](../images/glide_logo.png)
+![glide logo](images/glide_logo.png)
 
 Glide支持获取，解码和显示视频、图片以及GIF动画。Glide包含一个灵活的API，允许开发人员插入几乎任何网络堆栈。默认情况下，Glide使用基于HttpUrlConnection的自定义堆栈，但是也包含实用程序库插入到Google的Volley项目或Square的OkHttp库替代。
 
@@ -32,7 +32,7 @@ Glide采取了许多步骤，以确保图像在Android上加载尽可能快速�
 
 ## 入门
 
-首先查看[下载和安装](../docs/Download-Setup.md)页面，了解如何将Glide整合到您的应用程序中。然后，查看[入门指南](../docs/Getting-Started.md)页面了解基础知识。有关更多帮助和示例，请继续阅读文档部分的其余部分，或查看我们提供的[示例程序](http://bumptech.github.io/glide/ref/samples.html)。
+首先查看[下载和安装](Download-Setup.md)页面，了解如何将Glide整合到您的应用程序中。然后，查看[入门指南](Getting-Started.md)页面了解基础知识。有关更多帮助和示例，请继续阅读文档部分的其余部分，或查看我们提供的[示例程序](http://bumptech.github.io/glide/ref/samples.html)。
 
 ## 要求
 
